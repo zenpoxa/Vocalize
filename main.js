@@ -14,7 +14,7 @@ var dico = {
     "Percépteur" : "n Fonctionnaire du Trésor chargé de recouvrer les impôts directs.",
     "Rétif" : "adj 1. Qui s'arrête ou recule au lieu d'avancer : cheval rétif 2. FIG Indocile, récalcitrant.",
     "Proéminent" : "adj En relief par rapport à ce qui est autour ; saillant.",
-    "Helvète ou Helvétique" : "adj n De la Suisse.",
+    "Helvète" : "adj n De la Suisse.",
     "Placide" : "adj Calme, paisible, serein.",
     "Chétif" : "adj De faible constitution, maigre.",
     "Prolixe" : "adj Diffus, trop long, bavard : discours prolixe.",
