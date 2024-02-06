@@ -2,8 +2,22 @@
  * DICTIONNAIRE DE MOTS
  ***************************/
 var dico = {
-    "Rixe" : "nf. Querelle accompagnée d'injures et de coups ; bagarre.",
-    "Houppelande" : "nf. Ample manteau sans manches.",
+    "Rixe" : "nf Querelle accompagnée d'injures et de coups ; bagarre.",
+    "Houppelande" : "nf Ample manteau sans manches.",
+    "Circonspection" : "nf Prudence, discrétion dans ses actes ou ses paroles.",
+    "Rabot" : "nm Outil de menuisier pour aplanir le bois ou le moulurer.",
+    "Attifer" : "vt FAM Habiller d'une manière bizarre.",
+    "Antonomase" : "nf Procédé d'expression par lequel un personnage est désigné par un nom commnun (le général pour de Gaulle) ou par lequel un nom propre est pris pour un nom commun (un harpagon pour un avare).",
+    "Dithyrambique" : "adj Très élogieux.",
+    "Sigisbée" : "nm Chevalier servant d'une dame.",
+    "Récital" : "nm Concert, spectacle donné par un seul artiste, un seul groupe, ou consacré à un seul genre.",
+    "Percépteur" : "n Fonctionnaire du Trésor chargé de recouvrer les impôts directs.",
+    "Rétif" : "adj 1. Qui s'arrête ou recule au lieu d'avancer : cheval rétif 2. FIG Indocile, récalcitrant.",
+    "Proéminent" : "adj En relief par rapport à ce qui est autour ; saillant.",
+    "Helvète ou Helvétique" : "adj n De la Suisse.",
+    "Placide" : "adj Calme, paisible, serein.",
+    "Chétif" : "adj De faible constitution, maigre.",
+    "Prolixe" : "adj Diffus, trop long, bavard : discours prolixe.",
 }
 
 /****************************
