@@ -1,6 +1,7 @@
 :root {
-    --typescale-lead : 3rem;
-    --typescale-paragraph : 1.5rem;
+    --typescale-lead            : 3rem;
+    --typescale-paragraph       : 1.5rem;
+    --typescale-small-paragraph : 20px;
 
     --primary-color: #e53b17;
     --primary-light: #f88123;
@@ -22,6 +23,7 @@ body {
     h1, h2, h3, h4, h5, h6, p, textarea, details, button {
         text-decoration: none;
         font-size: var(--typescale-paragraph);
+        color: white;
 
             // enlever la possibilité de sélection (plus KLEAN)
         -webkit-user-select: none;
@@ -85,11 +87,12 @@ body {
                         font-weight: bolder;
                         text-align: center;
                         font-size: var(--typescale-lead);
-    
+                        text-shadow: black 0 0 5px;
+                        
                         padding: 1rem;
                         margin: 0 1rem;
     
-                        border-bottom: 4px double var(--primary-color);
+                        border: 5px double var(--primary-color);
                     }
 
                     &>div {
@@ -117,13 +120,14 @@ body {
 
                         // bouton de déroulement
                     &>summary {
-
                         padding: .5rem;
                         border-radius: var(--border-radius);
                         background-color: white;
-                        
+
+                        color: var(--primary-light);
                         text-align: center;
                         font-size: var(--typescale-paragraph);
+                        font-weight: 700;
 
                         &:hover {
                             cursor: pointer;
@@ -144,39 +148,56 @@ body {
                 &>button {
                     width: 30%;
 
+                    padding: .5rem;
+
+                    background-color: var(--primary-color);
+
                     border-radius: var(--border-radius);
                     border: none;
 
-                    opacity: .9;
-                    transition: opacity .1s;
+                    opacity: .8;
+                    transition: opacity .3s, transform .65s;
 
                     &:hover {
                         opacity: 1;
+                        transform: translateX(5%);
                     }
                 }
             }
 
             // trait de séparation
             &>span {
-                height: 100%;
-                border: 1px solid var(--primary-color);
+                height: 95%;
+                border: 2px solid var(--primary-color);
             }
 
             // zone à droite (essaie de définition)
-            textarea {
+            &>textarea {
                 background-color: var(--primary-light);
 
                 border-width: 5px;
-                border-radius: var(--border-radius);
                 border-color: var(--primary-color);
 
                 padding: 1rem;
 
+                flex-basis: 25%;
                 flex-shrink: 0;
 
                 height: 100%;
                 
                 resize: none;
+
+                font-size: var(--typescale-small-paragraph);
+                color: rgba(black, .7);
+
+                &::placeholder {
+                    color: rgba(black, .3);
+                    font-style: italic;
+                }
+                
+                &:focus {
+                    outline: none;
+                }
             }
         }
     }

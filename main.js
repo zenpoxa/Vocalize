@@ -35,7 +35,6 @@ function chooseAword () {
     idxMotAuPif = randomIntFromInterval(0, listeMots.length-1, idxMotAuPif);
     document.querySelector("#word-to-define").innerHTML = listeMots[idxMotAuPif];
     document.querySelector("#word-definition").innerHTML = dico[listeMots[idxMotAuPif]];
-    document.querySelector("textarea").value = "";
 }
 chooseAword();
 
