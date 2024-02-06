@@ -4,7 +4,6 @@
 var dico = {
     "Rixe" : "nf. Querelle accompagnée d'injures et de coups ; bagarre.",
     "Houppelande" : "nf. Ample manteau sans manches.",
-
 }
 
 /****************************
