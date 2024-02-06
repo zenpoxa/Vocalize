@@ -85,21 +85,23 @@ body {
                         font-size: var(--typescale-lead);
     
                         padding: 1rem;
+                        margin: 0 1rem;
     
-                        border-bottom: 3px double var(--primary-color);
+                        border-bottom: 4px double var(--primary-color);
                     }
+
                     &>div {
                         position: absolute;
                         left: 0;
                         top: 0;
                         height: 100%;
-                        width: 10%;
-                        background-color: var(--primary-color);
+                        width: 0%;
+                        background-color: var(--primary-light);
 
-                        transition: width .5s;
-                        transition-timing-function: cubic-bezier(1,.01,.6,.6);
+                        transition: width .8s;
+                        transition-timing-function: cubic-bezier(.4,0,0,1);
 
-                        &:hover {
+                        &.active {
                             width: 100%;
                         }
                     }
