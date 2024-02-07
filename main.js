@@ -1,6 +1,8 @@
 /****************************
  * DICTIONNAIRE DE MOTS
  ***************************/
+
+    // Longueur max d'un mot : 13 caractères
 var dico = {
     "Rixe" : "nf Querelle accompagnée d'injures et de coups ; bagarre.",
     "Houppelande" : "nf Ample manteau sans manches.",
@@ -20,6 +22,10 @@ var dico = {
     "Prolixe" : "adj Diffus, trop long, bavard : discours prolixe.",
 }
 
+
+
+
+
 /****************************
  * JEU
  ***************************/
@@ -28,7 +34,9 @@ var continuer;
 var listeMots = Object.keys(dico);
 var bouton = document.querySelector("details+button");
 var divWipe = document.querySelector("#word-to-define+div");
+const transitionEndEventName = getTransitionEndEventName();
 
+// choisir un mot à définir
 function chooseAword () {
     continuer = false;
 
@@ -36,23 +44,30 @@ function chooseAword () {
     document.querySelector("#word-to-define").innerHTML = listeMots[idxMotAuPif];
     document.querySelector("#word-definition").innerHTML = dico[listeMots[idxMotAuPif]];
 }
-chooseAword();
+chooseAword(); // appel initial lors du chargement de la page
 
-const transitionEndEventName = getTransitionEndEventName();
-
+// effacer le mot à définir
 function normalWipe() {
     divWipe.classList.add("active");
     document.querySelector("div>details").open = false;
     divWipe.addEventListener(transitionEndEventName, reverseWipe);
 }
 
+// faire apparaître un nouveau mot à définir
 function reverseWipe() {
     divWipe.removeEventListener(transitionEndEventName, reverseWipe);
     chooseAword();
     divWipe.classList.remove("active");
 }
 
+// changement de mot avec belle animation d'effacement
 bouton.addEventListener("click", normalWipe);
+
+// animation du bouton pour changer de mot
+//...
+
+
+
 
 
 /****************************

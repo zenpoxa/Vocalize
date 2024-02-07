@@ -7,6 +7,12 @@
     --primary-light: #f88123;
 
     --border-radius: 5px;
+
+    // variables sous forme responsive
+    @media screen and (max-width: 428px) {
+        --typescale-lead            : 1.8rem;
+        --typescale-paragraph       : 1.35rem;
+    }
 }
 
 * {
@@ -17,7 +23,7 @@
 
 body {
 
-    overflow: hidden;
+    background-color: var(--primary-color);
 
         // tout mettre à plat
     h1, h2, h3, h4, h5, h6, p, textarea, details, button {
@@ -39,6 +45,7 @@ body {
 
         // principal de la page
     &>main {
+        overflow: hidden;
 
         width: 100vw;
         height: 100vh;
@@ -47,8 +54,6 @@ body {
         justify-content: center;
         align-items: center;
 
-        background-color: var(--primary-color);
-    
         // zone principale (au milieu)
         &>div {
 
@@ -139,7 +144,7 @@ body {
                         padding: 1rem;
 
                         font-size: var(--typescale-paragraph);
-                        font-style: oblique;
+                        font-style: italic;
 
                         width: 100%;
                     }
@@ -200,5 +205,94 @@ body {
                 }
             }
         }
+    }
+
+
+
+
+
+
+
+
+
+
+    /*************
+    * RESPONSIVE
+    *************/
+    @media screen and (max-width: 428px) {
+
+        &>main {
+            overflow-y: scroll;
+
+            // zone principale (au milieu)
+            &>div {
+                height: 100vh;
+                width: 100vw;
+        
+                // zone à gauche (mot + sa déf)
+                &>div {
+                    gap: .5rem;
+                    padding: .5rem;
+    
+                        // Mot à définir
+                    &>div:first-of-type {
+    
+                        &>#word-to-define {
+                            padding: .5rem;
+                        }
+                    }
+    
+                    &>details {
+                        width: 100%;
+    
+                        // bouton de déroulement
+                        &>summary {
+
+                            // cacher txt (la Rousse)
+                            &>span {
+                                display: none;
+                            }
+                            padding: .2rem;
+
+                        }
+    
+                        // la définition
+                        &>p {
+                            text-align: justify;
+                            padding: .5rem;
+                        }
+                    }
+    
+                    &>button {
+                        width: 60%;
+
+                        padding: .5rem;
+
+                        opacity: 1;
+
+                        &:hover {
+                            transform: none;
+                        }
+                        
+                        // cacher le logo de flèche
+                        &>span {
+                            display: none;
+                        }
+                    }
+                }
+    
+                // trait de séparation
+                &>span {
+                    display: none;
+                }
+    
+                // zone à droite (notes)
+                &>textarea {
+                    display: none;
+                }
+
+            }
+        }
+
     }
 }
