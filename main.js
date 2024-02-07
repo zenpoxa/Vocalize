@@ -42,7 +42,7 @@ function chooseAword () {
 
     idxMotAuPif = randomIntFromInterval(0, listeMots.length-1, idxMotAuPif);
     document.querySelector("#word-to-define").innerHTML = listeMots[idxMotAuPif];
-    document.querySelector("#word-definition").innerHTML = dico[listeMots[idxMotAuPif]] + "fjdkslqfj dlksqjfkldsjfk lsjqfk sqjm fkdljfk slqj fkdlsj qfklsq jfkdlsqjmfk ";
+    document.querySelector("#word-definition").innerHTML = dico[listeMots[idxMotAuPif]];
 }
 chooseAword(); // appel initial lors du chargement de la page
 
