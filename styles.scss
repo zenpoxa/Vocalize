@@ -31,7 +31,7 @@ body {
         font-size: var(--typescale-paragraph);
         color: white;
 
-            // enlever la possibilité de sélection (plus KLEAN)
+        // enlever la possibilité de sélection (plus KLEAN)
         -webkit-user-select: none;
         -ms-user-select: none;
         user-select: none;
@@ -222,13 +222,14 @@ body {
     @media screen and (max-width: 428px) {
 
         &>main {
+
             overflow-y: scroll;
 
             // zone principale (au milieu)
             &>div {
                 height: 100vh;
                 width: 100vw;
-        
+
                 // zone à gauche (mot + sa déf)
                 &>div {
                     gap: .5rem;
@@ -260,6 +261,7 @@ body {
                         &>p {
                             text-align: justify;
                             padding: .5rem;
+                            font-size: larger;
                         }
                     }
     

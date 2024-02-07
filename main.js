@@ -42,7 +42,7 @@ function chooseAword () {
 
     idxMotAuPif = randomIntFromInterval(0, listeMots.length-1, idxMotAuPif);
     document.querySelector("#word-to-define").innerHTML = listeMots[idxMotAuPif];
-    document.querySelector("#word-definition").innerHTML = dico[listeMots[idxMotAuPif]];
+    document.querySelector("#word-definition").innerHTML = dico[listeMots[idxMotAuPif]] + "fjdkslqfj dlksqjfkldsjfk lsjqfk sqjm fkdljfk slqj fkdlsj qfklsq jfkdlsqjmfk ";
 }
 chooseAword(); // appel initial lors du chargement de la page
 
@@ -63,10 +63,6 @@ function reverseWipe() {
 // changement de mot avec belle animation d'effacement
 bouton.addEventListener("click", normalWipe);
 
-// animation du bouton pour changer de mot
-//...
-
-
 
 
 
@@ -77,12 +73,14 @@ bouton.addEventListener("click", normalWipe);
     // min et max inclus
 function randomIntFromInterval(min, max, former) {
     let nb = Math.floor(Math.random() * (max - min + 1) + min)
-    if (nb == former) {
-        return (randomIntFromInterval(min, max, former))
-    }
-    else {
-        return nb;
-    }
+    return nb;
+    // éviter de tomber deux fois sur le même
+    // if (nb == former) {
+    //     return (randomIntFromInterval(min, max, former))
+    // }
+    // else {
+    //     return nb;
+    // }
 }
 
     // obtenir la propriété de fin d'événement selon le moteur
