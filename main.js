@@ -1,35 +1,62 @@
 /****************************
- * DICTIONNAIRE DE MOTS
+ * DICTIONNAIRES
  ***************************/
 
     // Longueur max d'un mot : 13 caractères
-var dico = {
-    "Rixe" : "nf Querelle accompagnée d'injures et de coups ; bagarre.",
-    "Houppelande" : "nf Ample manteau sans manches.",
-    "Circonspection" : "nf Prudence, discrétion dans ses actes ou ses paroles.",
-    "Rabot" : "nm Outil de menuisier pour aplanir le bois ou le moulurer.",
-    "Attifer" : "vt FAM Habiller d'une manière bizarre.",
-    "Antonomase" : "nf Procédé d'expression par lequel un personnage est désigné par un nom commnun (le général pour de Gaulle) ou par lequel un nom propre est pris pour un nom commun (un harpagon pour un avare).",
-    "Dithyrambique" : "adj Très élogieux.",
-    "Sigisbée" : "nm Chevalier servant d'une dame.",
-    "Récital" : "nm Concert, spectacle donné par un seul artiste, un seul groupe, ou consacré à un seul genre.",
-    "Percépteur" : "n Fonctionnaire du Trésor chargé de recouvrer les impôts directs.",
-    "Rétif" : "adj 1. Qui s'arrête ou recule au lieu d'avancer : cheval rétif 2. FIG Indocile, récalcitrant.",
-    "Proéminent" : "adj En relief par rapport à ce qui est autour ; saillant.",
-    "Helvète" : "adj n De la Suisse.",
-    "Placide" : "adj Calme, paisible, serein.",
-    "Chétif" : "adj De faible constitution, maigre.",
-    "Prolixe" : "adj Diffus, trop long, bavard : discours prolixe.",
+var dico_voc = {
+    "Rixe"              : "nf Querelle accompagnée d'injures et de coups ; bagarre.",
+    "Houppelande"       : "nf Ample manteau sans manches.",
+    "Circonspection"    : "nf Prudence, discrétion dans ses actes ou ses paroles.",
+    "Rabot"             : "nm Outil de menuisier pour aplanir le bois ou le moulurer.",
+    "Attifer"           : "vt FAM Habiller d'une manière bizarre.",
+    "Antonomase"        : "nf Procédé d'expression par lequel un personnage est désigné par un nom commnun (le général pour de Gaulle) ou par lequel un nom propre est pris pour un nom commun (un harpagon pour un avare).",
+    "Dithyrambique"     : "adj Très élogieux.",
+    "Sigisbée"          : "nm Chevalier servant d'une dame.",
+    "Récital"           : "nm Concert, spectacle donné par un seul artiste, un seul groupe, ou consacré à un seul genre.",
+    "Percépteur"        : "n Fonctionnaire du Trésor chargé de recouvrer les impôts directs.",
+    "Rétif"             : "adj 1. Qui s'arrête ou recule au lieu d'avancer : cheval rétif 2. FIG Indocile, récalcitrant.",
+    "Proéminent"        : "adj En relief par rapport à ce qui est autour ; saillant.",
+    "Helvète"           : "adj n De la Suisse.",
+    "Placide"           : "adj Calme, paisible, serein.",
+    "Chétif"            : "adj De faible constitution, maigre.",
+    "Prolixe"           : "adj Diffus, trop long, bavard : discours prolixe.",
+    "Laconisme"         : "nm Concision dans l'expression.",
+    "Dundee"            : "nm Bateau de pêche à deux mâts.",
+    "Bas-bleu"          : "nm VIEILLI Femme pédante, à prétentions littéraires."
 }
 
+var dico_latin = {
+    "Rixe"              : "nf Querelle accompagnée d'injures et de coups ; bagarre.",
+    "Houppelande"       : "nf Ample manteau sans manches.",
+    "Circonspection"    : "nf Prudence, discrétion dans ses actes ou ses paroles.",
+    "Rabot"             : "nm Outil de menuisier pour aplanir le bois ou le moulurer.",
+    "Attifer"           : "vt FAM Habiller d'une manière bizarre.",
+    "Antonomase"        : "nf Procédé d'expression par lequel un personnage est désigné par un nom commnun (le général pour de Gaulle) ou par lequel un nom propre est pris pour un nom commun (un harpagon pour un avare).",
+    "Dithyrambique"     : "adj Très élogieux.",
+    "Sigisbée"          : "nm Chevalier servant d'une dame.",
+    "Récital"           : "nm Concert, spectacle donné par un seul artiste, un seul groupe, ou consacré à un seul genre.",
+    "Percépteur"        : "n Fonctionnaire du Trésor chargé de recouvrer les impôts directs.",
+    "Rétif"             : "adj 1. Qui s'arrête ou recule au lieu d'avancer : cheval rétif 2. FIG Indocile, récalcitrant.",
+    "Proéminent"        : "adj En relief par rapport à ce qui est autour ; saillant.",
+    "Helvète"           : "adj n De la Suisse.",
+    "Placide"           : "adj Calme, paisible, serein.",
+    "Chétif"            : "adj De faible constitution, maigre.",
+    "Prolixe"           : "adj Diffus, trop long, bavard : discours prolixe.",
+    "Laconisme"         : "nm Concision dans l'expression.",
+    "Dundee"            : "nm Bateau de pêche à deux mâts.",
+    "Bas-bleu"          : "nm VIEILLI Femme pédante, à prétentions littéraires."
+}
+
+var dico = dico_voc;
 
 
 
 
 /****************************
- * JEU
+ * JEUX
  ***************************/
 var idxMotAuPif = -1;
+var idxMotAuPifHist = [];
 var continuer;
 var listeMots = Object.keys(dico);
 var bouton = document.querySelector("details+button");
@@ -40,7 +67,7 @@ const transitionEndEventName = getTransitionEndEventName();
 function chooseAword () {
     continuer = false;
 
-    idxMotAuPif = randomIntFromInterval(0, listeMots.length-1, idxMotAuPif);
+    idxMotAuPif = getIdxAuPif(0, listeMots.length-1, idxMotAuPifHist);
     document.querySelector("#word-to-define").innerHTML = listeMots[idxMotAuPif];
     document.querySelector("#word-definition").innerHTML = dico[listeMots[idxMotAuPif]];
 }
@@ -70,20 +97,29 @@ bouton.addEventListener("click", normalWipe);
  * BOITE A OUTILS
  ***************************/
 
-    // min et max inclus
-function randomIntFromInterval(min, max, former) {
-    let nb = Math.floor(Math.random() * (max - min + 1) + min)
-    return nb;
-    // éviter de tomber deux fois sur le même
-    // if (nb == former) {
-    //     return (randomIntFromInterval(min, max, former))
-    // }
-    // else {
-    //     return nb;
-    // }
+// Prendre un incide aléatoirement, mais pas le droit de le voir 2 fois
+function getIdxAuPif(min, max, hist) {
+    let nb = randomIntFromInterval(min, max);
+
+    if (max == hist.length-1) { // réinitialiser historique des mots parcourus si déjà tous faits
+        hist = [];
+    }
+
+    if (!hist.includes(nb)) { // si idx jamais vu dans l'historique actuel, alors le prendre
+        hist.push(nb);
+        return nb;
+    }
+    else { // sinon en prendre un autre
+        return (getIdxAuPif(min, max, hist));
+    }
 }
 
-    // obtenir la propriété de fin d'événement selon le moteur
+// Min et max inclus
+function randomIntFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+// Obtenir la propriété de fin d'événement selon le moteur
 function getTransitionEndEventName() {
     var transitions = {
         "transition"      : "transitionend",
