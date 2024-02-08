@@ -14,7 +14,13 @@
     
     <main>
 
-      <div>
+      <div class="game-choice">
+        <h1>Quel jeu ?</h1>
+        <button data-game="vocabulaire">Vocabulaire</button>
+        <button data-game="latin">Mots latins</button>
+      </div>
+
+      <div data-game="vocabulaire">
         <div>
           <div>
             <p id="word-to-define"></p>
@@ -22,10 +28,10 @@
           </div>
 
           <details>
-            <summary>Définition <span>(LaRousse)</span></summary>
+            <summary>Définition<span> (LaRousse)</span></summary>
             <p id="word-definition"></p>            
           </details>
-          <button>Mot Suivant <span>&rarr;</span></button>
+          <button>Mot Suivant<span> &rarr;</span></button>
         </div>
 
         <span></span>
@@ -33,7 +39,7 @@
         <textarea placeholder="Notes..."></textarea>
       </div>
 
-      <div>
+      <div data-game="latin">
         <div>
           <div>
             <p id="word-to-define"></p>
