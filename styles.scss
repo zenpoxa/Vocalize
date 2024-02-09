@@ -264,17 +264,23 @@ body {
         &>main {
 
             overflow-y: scroll;
+            height: auto;
 
             // zone principale (au milieu)
             &>div:not(.game-choice) {
 
-                height: 100vh;
+                min-height: 100vh;
                 width: 100vw;
 
                 // zone à gauche (mot + sa déf)
                 &>div {
                     gap: .5rem;
+
                     padding: .5rem;
+                    max-width: 100%;
+                    height: auto;
+
+                    align-self: stretch;
     
                         // Mot à définir
                     &>div:first-of-type {
