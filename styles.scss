@@ -105,12 +105,11 @@ body {
             top: 0;
 
             height: 100vh;
+            width: .01px;
 
             z-index: 3;
 
             transition: 1s cubic-bezier(.75,.02,0,1.16);
-
-            width: 100px;
 
             &:nth-of-type(1) {
                 background-color: var(--primary-color);

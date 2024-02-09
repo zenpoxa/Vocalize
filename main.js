@@ -41,6 +41,9 @@ const dico_latin = {
  ***************************/
 const allGamesDivs = document.querySelectorAll("main>div:not(.game-choice)");
 const allSpanTrans = document.querySelectorAll("main>span");
+const transitionEndEventName = getTransitionEndEventName();
+var typeOfGame;
+var dico;
 
 var gameChoiceBtns = document.querySelector("main>div.game-choice").querySelectorAll("button");
 gameChoiceBtns.forEach(btn => {
@@ -51,11 +54,20 @@ function load_game(evt) {
 
     allSpanTrans.forEach(span => {
         span.classList.add("active");
-    })
+    });
+    typeOfGame = evt.currentTarget.getAttribute('data-game');
+    allSpanTrans[0].addEventListener(transitionEndEventName, load_rest_of_game); // détecter la fin de l'animation
+};
+
+function load_rest_of_game() {
+
+    // Finir l'animation d'apparition (wipe) de la fenêtre
+    allSpanTrans.forEach(span => {
+        span.classList.remove("active");
+    });
+    allSpanTrans[0].removeEventListener(transitionEndEventName, load_rest_of_game);
 
     // choisir le bon dictionnaire (manuellement fait ici)
-    var typeOfGame = evt.currentTarget.getAttribute('data-game');
-    var dico;
     switch (typeOfGame) {
         case "vocabulaire":
             dico = dico_voc;
@@ -71,7 +83,7 @@ function load_game(evt) {
 
     // activer le jeu (classe .active)
     allGamesDivs.forEach(div => {
-        if (div.getAttribute('data-game') == evt.currentTarget.getAttribute('data-game')) {
+        if (div.getAttribute('data-game') == typeOfGame) {
             div.classList.add('active');
         }
     })
@@ -85,7 +97,6 @@ function load_game(evt) {
     var listeMots = Object.keys(dico);
     var bouton = document.querySelector("main>div.active details+button");
     var divWipe = document.querySelector("main>div.active #word-to-define+div");
-    const transitionEndEventName = getTransitionEndEventName();
 
     // choisir un mot à définir
     function chooseAword () {
@@ -112,7 +123,7 @@ function load_game(evt) {
     // changement de mot avec belle animation d'effacement
     bouton.addEventListener("click", normalWipe);
 
-}
+};
 
 
 
