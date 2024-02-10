@@ -105,11 +105,11 @@ body {
             top: 0;
 
             height: 100vh;
-            width: .01px;
+            width: 0%;
 
             z-index: 3;
 
-            transition: 1s cubic-bezier(.75,.02,0,1.16);
+            transition: .8s cubic-bezier(.75,.02,0,1.16);
 
             &:nth-of-type(1) {
                 background-color: var(--primary-color);
@@ -145,7 +145,7 @@ body {
             gap: 2rem;
             padding: 1rem;
 
-            border: 1rem ridge rgba(white, .7);
+            border: 1rem ridge rgba(255, 255, 255, .2);
             
             background-color: var(--primary-light);
     
