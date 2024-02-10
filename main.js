@@ -23,15 +23,18 @@ const dico_voc = {
     "Laconisme"         : "nm Concision dans l'expression.",
     "Dundee"            : "nm Bateau de pêche à deux mâts.",
     "Bas-bleu"          : "nm VIEILLI Femme pédante, à prétentions littéraires.",
-    "Échancrer"         : "vt Creuser, découper une partie du borde de quelque chose.",
+    "Échancrer"         : "vt Creuser, découper une partie du bord de quelque chose.",
     "Manitou"           : "nm FAM Personne puissante ou qui fait autorité dans un domaine.",
-    "Maraud"            : "n VX Scélérat, voleur.",
+    "Maraud"            : "n VX Scélérat, voleur."
 };
 
 const dico_latin = {
     "Agricola"              : "Celui qui cultive la terre.",
     "Latum"                 : "Largeur. Dimension d'un bord à un autre.",
-    "Curriculum"            : "1. Compétition, épreuve de vitesse 2. Activité impliquant une série d'étapes 3. (CV) Ensemble des renseignements conernant le passé d'une personne."
+    "Curriculum"            : "1. Compétition, épreuve de vitesse 2. Activité impliquant une série d'étapes 3. (CV) Ensemble des renseignements conernant le passé d'une personne.",
+    "Priori"                : "1. Antiérieur, qui précède dans le temps 2. Qui est au-dessur (plus remarquable).",
+    "Fortiori"              : "Fort, solide, vigoureux.",
+    "Visa"                  : "Choses vues - marque apposée sur les actes romains qui étaient vérifiés."
 };
 
 
