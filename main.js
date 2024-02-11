@@ -25,7 +25,13 @@ const dico_voc = {
     "Bas-bleu"          : "nm VIEILLI Femme pédante, à prétentions littéraires.",
     "Échancrer"         : "vt Creuser, découper une partie du bord de quelque chose.",
     "Manitou"           : "nm FAM Personne puissante ou qui fait autorité dans un domaine.",
-    "Maraud"            : "n VX Scélérat, voleur."
+    "Maraud"            : "n VX Scélérat, voleur.",
+    "Verve"             : "nf Qualité de quelqu'un qui parle avec enthousiasme et brio.",
+    "Diapré"            : "adf LITT De couleurs variées, vives.",
+    "Lacis"             : "nm Réseau de fil ou de soie ; réseau de personnes, de routes...",
+    "Fleurer"           : "vi Répandre une odeur ; évoquer.",
+    "Biffer"            : "vt Rayer / effacer ce qui est écrit.",
+    "Impavide"          : "adj LITT Sans peur, inébranlable."
 };
 
 const dico_latin = {
