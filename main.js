@@ -32,9 +32,12 @@ const dico_latin = {
     "Agricola"              : "Celui qui cultive la terre.",
     "Latum"                 : "Largeur. Dimension d'un bord à un autre.",
     "Curriculum"            : "1. Compétition, épreuve de vitesse 2. Activité impliquant une série d'étapes 3. (CV) Ensemble des renseignements conernant le passé d'une personne.",
-    "Priori"                : "1. Antiérieur, qui précède dans le temps 2. Qui est au-dessur (plus remarquable).",
+    "Priori"                : "1. Antiérieur, qui précède dans le temps 2. Qui est au-dessus (plus remarquable).",
     "Fortiori"              : "Fort, solide, vigoureux.",
-    "Visa"                  : "Choses vues - marque apposée sur les actes romains qui étaient vérifiés."
+    "Visa"                  : "Choses vues - marque apposée sur les actes romains qui étaient vérifiés.",
+    "Ad vitam aeternam"     : "Pour la vie éternelle ; jusqu'à la fin des jours.",
+    "Posteriori"            : "Qui vient après dans le temps.",
+    "Ad hominem"            : "1. Envers l'homme 2. Stratégie rhétorique qui consiste à utiliser les contradictions d'une personne pour marquer une distanciation."
 };
 
 
