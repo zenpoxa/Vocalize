@@ -31,7 +31,12 @@ const dico_voc = {
     "Lacis"             : "nm Réseau de fil ou de soie ; réseau de personnes, de routes...",
     "Fleurer"           : "vi Répandre une odeur ; évoquer.",
     "Biffer"            : "vt Rayer / effacer ce qui est écrit.",
-    "Impavide"          : "adj LITT Sans peur, inébranlable."
+    "Impavide"          : "adj LITT Sans peur, inébranlable.",
+    "Soliloquer"        : "vi Se parler à soi-même.",
+    "Supputer"          : "vt SOUT Essayer, d'après certaines données, de prévoir l'évolution d'une situation, la probabilité d'un événement : supputer les chances d'aboutir.",
+    "Ruffian"           : "nm Débauché, voire proxénète ou voyou.",
+    "Proxénétisme"      : "nm Activité délictueuse consistant à favoriser la prostitution d'autrui ou à en tirer profit.",
+    "Vaticiner"         : "vi LITT, PÉJOR Prophétie pompeuse et oiseuse"
 };
 
 const dico_latin = {
