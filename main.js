@@ -36,7 +36,11 @@ const dico_voc = {
     "Supputer"          : "vt SOUT Essayer, d'après certaines données, de prévoir l'évolution d'une situation, la probabilité d'un événement : supputer les chances d'aboutir.",
     "Ruffian"           : "nm Débauché, voire proxénète ou voyou.",
     "Proxénétisme"      : "nm Activité délictueuse consistant à favoriser la prostitution d'autrui ou à en tirer profit.",
-    "Vaticiner"         : "vi LITT, PÉJOR Prophétie pompeuse et oiseuse"
+    "Vaticiner"         : "vi LITT, PÉJOR Prophétie pompeuse et oiseuse.",
+    "Pléthore"          : "nf Suraboncance.",
+    "Circonlocution"    : "nf Moyen détourné de parler, périphrase.",
+    "Anomie"            : "nf Désorganisation sociale résultant de l'absence de normes communes dans une société.",
+    "Tribulations"      : "nf pl Mésaventures."
 };
 
 const dico_latin = {
