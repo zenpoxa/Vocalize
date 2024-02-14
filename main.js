@@ -40,7 +40,14 @@ const dico_voc = {
     "Pléthore"          : "nf Suraboncance.",
     "Circonlocution"    : "nf Moyen détourné de parler, périphrase.",
     "Anomie"            : "nf Désorganisation sociale résultant de l'absence de normes communes dans une société.",
-    "Tribulations"      : "nf pl Mésaventures."
+    "Tribulations"      : "nf pl Mésaventures.",
+    "Primesautier"      : "adj Vif, alerte, spontané : esprit primesautier.",
+    "Bouter"            : "vt Action qui consiste à mettre dehors quelqu'un, quelque chose.",
+    "Pudibond"          : "adj Qui manifeste une pudeur excessive, ridicule.",
+    "Flagornerie"      : "adj LITT Basse flatterie.",
+    "Potentat"          : "nm 1. Souverain absolu d'un Etat puissant 2. FIG Homme qui dirige de façon tyrannique.",
+    "Mirifique"         : "adj IRO Etonnant, merveilleux."
+
 };
 
 const dico_latin = {
