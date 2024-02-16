@@ -44,10 +44,15 @@ const dico_voc = {
     "Primesautier"      : "adj Vif, alerte, spontané : esprit primesautier.",
     "Bouter"            : "vt Action qui consiste à mettre dehors quelqu'un, quelque chose.",
     "Pudibond"          : "adj Qui manifeste une pudeur excessive, ridicule.",
-    "Flagornerie"      : "adj LITT Basse flatterie.",
+    "Flagornerie"       : "adj LITT Basse flatterie.",
     "Potentat"          : "nm 1. Souverain absolu d'un Etat puissant 2. FIG Homme qui dirige de façon tyrannique.",
-    "Mirifique"         : "adj IRO Etonnant, merveilleux."
-
+    "Mirifique"         : "adj IRO Etonnant, merveilleux.",
+    "Rodomontade"       : "nf LIIT Attitude prétentieuse.",
+    "Forfanterie"       : "nf LITT Vantardise. Etaler ses prétendues vertus.",
+    "Hédonisme"         : "nm Morale qui fait du plaisir, de la satisfaction des sens, le but de la vie.",
+    "Impondérable"      : "adj SOUT 1. Difficile à évaluer, à prévoir 2. FIG Element ou circonstance imprévisible : se méfier des impondérables.",
+    "Diatribe"          : "nf Critique amère et violente ; pamphlet.",
+    "Tonitruant"        : "adj Bruyant comme le tonnerre : voix tonitruante."
 };
 
 const dico_latin = {
