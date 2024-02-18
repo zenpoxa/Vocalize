@@ -52,7 +52,8 @@ const dico_voc = {
     "Hédonisme"         : "nm Morale qui fait du plaisir, de la satisfaction des sens, le but de la vie.",
     "Impondérable"      : "adj SOUT 1. Difficile à évaluer, à prévoir 2. FIG Element ou circonstance imprévisible : se méfier des impondérables.",
     "Diatribe"          : "nf Critique amère et violente ; pamphlet.",
-    "Tonitruant"        : "adj Bruyant comme le tonnerre : voix tonitruante."
+    "Tonitruant"        : "adj Bruyant comme le tonnerre : voix tonitruante.",
+    "Fourbir"           : "vt Nettoyer ; polir : fourbir des armes."
 };
 
 const dico_latin = {
