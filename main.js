@@ -55,7 +55,8 @@ const dico_voc = {
     "Tonitruant"        : "adj Bruyant comme le tonnerre : voix tonitruante.",
     "Fourbir"           : "vt Nettoyer ; polir : fourbir des armes.",
     "Encensoir"         : "nm Cassolette suspendu où brûle l'encens.",
-    "Encenser"          : "vt 1. Agiter l'encensoir devant quelque chose : encenser un autel 2. FIG Flatter, honorer avec des louanges excessives : la presse l'encense."
+    "Encenser"          : "vt 1. Agiter l'encensoir devant quelque chose : encenser un autel 2. FIG Flatter, honorer avec des louanges excessives : la presse l'encense.",
+    "Quia (à)"          : "loc adv LITT être, mettre à quia : être réduit, réduire à ne pas pouvoir répondre."
 };
 
 const dico_latin = {
