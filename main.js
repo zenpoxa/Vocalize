@@ -57,7 +57,8 @@ const dico_voc = {
     "Encensoir"         : "nm Cassolette suspendu où brûle l'encens.",
     "Encenser"          : "vt 1. Agiter l'encensoir devant quelque chose : encenser un autel 2. FIG Flatter, honorer avec des louanges excessives : la presse l'encense.",
     "Quia (à)"          : "loc adv LITT être, mettre à quia : être réduit, réduire à ne pas pouvoir répondre.",
-    "Velléité"          : "nf (surtout au pluriel) Volonté hésitante ; intention fugitive : avoir des velléités d'écrire."
+    "Velléité"          : "nf (surtout au pluriel) Volonté hésitante ; intention fugitive : avoir des velléités d'écrire.",
+    "Compendieusement" : "adv LITT Brièvement, succinctement."
 };
 
 const dico_latin = {
