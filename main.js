@@ -59,7 +59,9 @@ const dico_voc = {
     "Quia (à)"          : "loc adv LITT être, mettre à quia : être réduit, réduire à ne pas pouvoir répondre.",
     "Velléité"          : "nf (surtout au pluriel) Volonté hésitante ; intention fugitive : avoir des velléités d'écrire.",
     "Compendieusement"  : "adv LITT Brièvement, succinctement.",
-    "Glabelle"          : "nf Éminence médiane placée sur la partie verticale de l'os frontal."
+    "Glabelle"          : "nf Éminence médiane placée sur la partie verticale de l'os frontal.",
+    "Prohibition"       : "nf Interdiction promulguée par une autorité.",
+    "Nonobstant"        : "prép. Malgré."
 };
 
 const dico_latin = {
