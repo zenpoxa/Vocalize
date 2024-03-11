@@ -61,7 +61,8 @@ const dico_voc = {
     "Compendieusement"  : "adv LITT Brièvement, succinctement.",
     "Glabelle"          : "nf Éminence médiane placée sur la partie verticale de l'os frontal.",
     "Prohibition"       : "nf Interdiction promulguée par une autorité.",
-    "Nonobstant"        : "prép. Malgré."
+    "Nonobstant"        : "prép. Malgré.",
+    "Indolent"          : "adj Nonchalant, apathique."
 };
 
 const dico_latin = {
