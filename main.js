@@ -77,6 +77,20 @@ const dico_latin = {
     "Ad hominem"            : "1. Envers l'homme 2. Stratégie rhétorique qui consiste à utiliser les contradictions d'une personne pour marquer une distanciation."
 };
 
+const dico_codes = {
+    "101"                   : "Capital social",
+    "164"                   : "Emprunt",
+    "120"                   : "Profit",
+    "129"                   : "Perte",
+    "13"                    : "Subvention",
+    "203"                   : "R&D",
+    "211"                   : "Terrain",
+    "213"                   : "Construction",
+    "215"                   : "Matériel industriel",
+    "2183"                  : "Matériel informatique",
+    "2182"                  : "Matériel de transport"
+};
+
 
 
 /****************************
@@ -118,6 +132,10 @@ function load_rest_of_game() {
 
         case "latin":
             dico = dico_latin;
+            break;
+
+        case "codes":
+            dico = dico_codes;
             break;
 
         default:
@@ -165,7 +183,6 @@ function load_rest_of_game() {
 
     // changement de mot avec belle animation d'effacement
     bouton.addEventListener("click", normalWipe);
-
 };
 
 
