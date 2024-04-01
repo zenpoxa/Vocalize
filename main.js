@@ -88,7 +88,14 @@ const dico_codes = {
     "213"                   : "Construction",
     "215"                   : "Matériel industriel",
     "2183"                  : "Matériel informatique",
-    "2182"                  : "Matériel de transport"
+    "2182"                  : "Matériel de transport",
+    "31"                    : "Stocks de MP",
+    "35"                    : "Stocks de PF",
+    "37"                    : "Stocks de marchandises (PF pas fabriqués soi-même)",
+    "401"                   : "Fournisseur MP",
+    "411"                   : "Client",
+    "421"                   : "Personnel",
+    "43"                    : "Organismes sociaux & fiscaux",
 };
 
 
