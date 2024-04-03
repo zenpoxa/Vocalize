@@ -99,9 +99,12 @@ const dico_codes = {
     "512"                   : "Banque",
     "53"                    : "Caisse (pièces & billets)",
     "601"                   : "Achat MP",
+    "607"                   : "Achat de marchandises",
+    "665"                   : "Escomptes accordés",
     "701"                   : "Vente PF",
     "706"                   : "Vente de prestations / services",
-    "707"                   : "Vente de marchandises (revendeur)"
+    "707"                   : "Vente de marchandises (revendeur)",
+    "709"                   : "Rabais, remises et ristournes"
 };
 
 
