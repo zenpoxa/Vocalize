@@ -96,6 +96,12 @@ const dico_codes = {
     "411"                   : "Client",
     "421"                   : "Personnel",
     "43"                    : "Organismes sociaux & fiscaux",
+    "512"                   : "Banque",
+    "53"                    : "Caisse (pièces & billets)",
+    "601"                   : "Achat MP",
+    "701"                   : "Vente PF",
+    "706"                   : "Vente de prestations / services",
+    "707"                   : "Vente de marchandises (revendeur)"
 };
 
 
